@@ -1,0 +1,54 @@
+.Nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000; 
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Ajout pour séparer le logo et les éléments de navigation */
+    padding: 0 20px; /* Espacement autour du contenu pour les grands écrans */
+}
+
+.NavItem {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .Logo {
+    width: 50px; /* ajustez la taille du logo comme nécessaire */
+  }
+  
+  .vvd {
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    color: rgb(27, 25, 25);
+    font-size: 16px;
+    margin-left: 15px; /* espace entre les boutons */
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .vvd:hover {
+    color: #bb3030;
+    border-bottom: .2rem solid #bb3030;
+  }
+  
+  .home {
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    color: rgb(27, 25, 25);
+    font-size: 16px;
+    margin-left: 15px; 
+    cursor: pointer;
+    color: #bb3030;
+    border-bottom: .2rem solid #bb3030;
+  }
