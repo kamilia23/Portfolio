@@ -1,7 +1,8 @@
+import "../styles/education.css"
 
 function Education() {
     return (
-      <div className="App">
+      <div className="education">
        <section class="education" id="education">
 
 <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
@@ -12,8 +13,8 @@ function Education() {
 
   <div class="box">
       <div class="image">
-        {/**      <img draggable="false" src="./assets/images/educat/college.jpg" alt="">
- */}
+          <img draggable="false" src={`./avatar.png`} alt=""/>
+ 
       </div>
       <div class="content">
       <h3>Bachelor of Engineering in Information Technology</h3>
@@ -24,8 +25,8 @@ function Education() {
 
   <div class="box">
     <div class="image">
-        {/**    <img draggable="false" src="./assets/images/educat/school.jpg" alt="">
- */}
+           <img draggable="false" src={`./avatar.png`} alt=""/>
+ 
     </div>
     <div class="content">
     <h3>HSC Science | Informatic Practices</h3>

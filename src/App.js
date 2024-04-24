@@ -1,8 +1,9 @@
 import './App.css';
 import Navbar from './components/navbar';
-import Home from './components/home';
 import { HashRouter  as Router } from "react-router-dom";
 import React from 'react';
+import Page from './components/page';
+import Footer from './components/footer';
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       
       <Router>
         <Navbar/>
-        <Home/>
+        <Page/>
+        <Footer/>
       </Router>
     </div>
   );

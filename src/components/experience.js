@@ -1,7 +1,7 @@
-
+import "../styles/exp.css"
 function Experience() {
     return (
-      <div className="App">
+      <div className="exp">
        <section class="experience" id="experience">
 
             <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>

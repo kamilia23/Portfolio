@@ -1,7 +1,8 @@
+import "../styles/work.css"
 
 function Work() {
     return (
-      <div className="App">
+      <div className="work">
        <section class="work" id="work">
 
 <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
@@ -9,8 +10,8 @@ function Work() {
 <div class="box-container">
 
    <div class="box tilt">
-    {/**    <img draggable="false" src="./assets/images/projects/portfolio1.PNG" alt="" />
- */}
+        <img draggable="false" src="./avatar.png" alt="" />
+ 
     <div class="content">
       <div class="tag">
       <h3>Portfolio Website</h3>

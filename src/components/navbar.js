@@ -12,7 +12,7 @@ function Navbar() {
       <ul className="NavItem">
        
         <HashLink exact="true" to="/#home">
-                    <button className="home">
+                    <button className="homen">
                     <span>Home</span>
                     </button>
                     
