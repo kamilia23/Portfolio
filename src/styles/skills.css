@@ -1,12 +1,13 @@
 .skills {
-    min-height: 90vh;
-    background: linear-gradient(to bottom, #fdc732, #d42c3a);
+    min-height: 70vh;
+    background: linear-gradient(to bottom, #06dba6, #539af8);
   }
   .skills h2 {
     color: #fff;
   }
-  .skills .heading span {
-    color: rgb(190, 44, 44);
+  .skills .heading  {
+    color: rgb(0, 0, 0);
+    text-align: center;
   }
   .skills .container {
     background: rgba(0, 0, 22, 0.4);
@@ -19,7 +20,7 @@
   }
   .skills .container .row {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     flex-wrap: wrap;
     gap: 1.8rem;
   }

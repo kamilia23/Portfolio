@@ -7,7 +7,12 @@
     gap: 1.5rem;
     min-height: 100vh;
     align-items: center;  
+    background-image: url('../fond.jpg');    
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir l'élément */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-position: center; /* Centre l'image dans l'élément */
     background-color: rgb(243, 243, 243);
+    
   }
 
   .home::before {
@@ -32,6 +37,27 @@
     flex: 1 1 40rem;
     z-index: 1;
   }
+  @keyframes moveImage {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(50px, -10px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  .home .image img {
+    transition: transform 10s ease-in-out;
+  }
+  
+  .home .image:hover img {
+    animation: moveImage 1s infinite;
+  }
+  
+  
   .home .image img {
     width: 60%;
     margin-right: 0rem;
@@ -63,21 +89,22 @@
   }
   .home .content p span {
     font-size: 2.5rem;
-    color: rgb(148, 8, 8);
-    font-weight: 600;
+    color: #d63131;
+    font-weight: 500;
     padding: 0rem 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   .home .btn {
     margin-top: -10px;
     position: absolute;
     text-decoration: none;
     line-height: 0;
-    padding: 1.3rem 1rem;
+    padding: 1rem 1rem;
     border-radius: 4em;
     transition: 0.5s;
     color: #fff;
     background: rgb(148, 8, 8);
-    box-shadow: 0px 5px 18px rgba(6, 16, 109, 0.6);
+    box-shadow: 0px 5px 18px #002057;
     font-family: "Nunito", sans-serif;
   }
   .home .btn span {
@@ -112,7 +139,7 @@
     
   }
   .social-icons a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: inline-block;
     line-height: 44px;
     color: #00d9ff;
@@ -136,11 +163,13 @@
     background-color: #0e0e0e;
   }
   .social-icons a.facebook:hover {
-    background-color: #00aced;
+    background-color: #0011ff;
   }
   .social-icons a.linkedin:hover {
     background-color: #007bb6;
   }
   .social-icons a.instagram:hover {
-    background-color: #ee00da;
+    
+    background: linear-gradient(to bottom, #fdc732, #e000ce);
+
   }

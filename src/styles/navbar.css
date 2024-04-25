@@ -52,3 +52,20 @@
     color: #bb3030;
     border-bottom: .2rem solid #bb3030;
   }
+
+  .lang {
+   margin-left: 20px;
+   height: 40px;
+   width: 40px;
+   border-radius: 50px;
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(to bottom, #2f00ff, #dbdbdb);
+}
+.lang:hover {
+  transition: color 0.3s ease;
+  background: linear-gradient(to bottom, #706e6e, #00b7ff);
+  font-weight: bold;
+
+}

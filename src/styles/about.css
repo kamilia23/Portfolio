@@ -2,14 +2,18 @@
     background: rgb(255, 255, 255);
     margin-bottom: 20px;
   }
-  .heading {
+  .about .heading {
     font-size: 30px;
     margin-top: 10px;
-  }
-  .heading span{
+    text-align: center; /* Centrer le texte horizontalement */
+}
+
+.about .heading span {
     font-size: 30px;
-    color: rgb(196, 47, 47);
-  }
+    color: #011aff;
+    margin: auto; /* Centrer l'élément span horizontalement */
+}
+
   .about .row {
     display: flex;
     flex-direction: row;
@@ -31,12 +35,9 @@
     margin-top: 0px;
     border-radius: 5%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-    mix-blend-mode: luminosity;
     cursor: pointer;
   }
-  .about .row .image img:hover {
-    mix-blend-mode: normal;
-  }
+ 
   .about .row .content {
     flex: 1 1 45rem;
     margin-bottom: 40px;
@@ -45,12 +46,14 @@
   .about .row .content h3 {
     color: rgb(27, 27, 27);
     font-size: 1.7rem;
+    
   }
   .about .row .content .tag {
     font-size: 1.3rem;
-    color: #020133;
+    color: #fdfdfd;
     font-weight: 600;
     margin-top: 1rem;
+    background-color: #283eff;
   }
   .about .row .content p {
     font-size: 1.1rem;
@@ -69,7 +72,8 @@
     text-transform: none;
   }
   .about .row .content .box-container .box p span {
-    color: #011aff;
+    color: #050714;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   .resumebtn {
     margin-top: 2rem;
@@ -87,7 +91,7 @@
   }
   .resumebtn .btn span {
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.5rem;
     letter-spacing: 0.1rem;
   }
   .resumebtn .btn i {
@@ -96,7 +100,8 @@
     transition: 0.3s;
   }
   .resumebtn .btn:hover {
-    background: #852222;
+    background: #000;
+    color: white;
   }
   .resumebtn .btn:hover i {
     transform: translateX(5px);

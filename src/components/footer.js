@@ -1,47 +1,167 @@
+import '../styles/footer.css'
+import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+    faArrowCircleUp, 
+    faPhone, 
+    faEnvelope, 
+    faMapMarkerAlt, 
+    faHeart, 
+    faChevronCircleRight 
+} from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-function Footer() {
-  return (
-    <div className="App">
-      <section class="footer">
 
-<div class="box-container">
+function Footer({ lang, onToggleLang }) {
+    const [showScrollTop, setShowScrollTop] = useState(false);
+    const [lastScrollTime, setLastScrollTime] = useState(Date.now());
 
-    <div class="box">
-        <h3>Jigar's Portfolio</h3>
-        <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
-    </div>
+    useEffect(() => {
+        let timer;
 
-    <div class="box">
-        <h3>quick links</h3>
-        <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
-        <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
-        <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
-        <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
-        <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
-        <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
-    </div>
+        const handleScroll = () => {
+            // Mettez à jour le temps du dernier défilement
+            setLastScrollTime(Date.now());
 
-    <div class="box">
-        <h3>contact info</h3>
-        <p> <i class="fas fa-phone"></i>+91 XXX-XXX-XXXX</p>
-        <p> <i class="fas fa-envelope"></i>jigarsable21@gmail.com</p>
-        <p> <i class="fas fa-map-marked-alt"></i>Pune, India-412206</p>
-        <div class="share">
+            // Récupérez la position actuelle de défilement
+            const currentScrollY = window.scrollY;
 
-            <a href="https://www.linkedin.com/in/jigar-sable" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
-            <a href="https://github.com/jigar-sable" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
-            <a href="mailto:jigarsable21@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
-            <a href="https://twitter.com/jigar_sable" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
-            <a href="https://t.me/lifecode5" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
+            // Récupérez la position du bas de la section "Home"
+            const homeBottom = document.getElementById('home').offsetTop + document.getElementById('home').offsetHeight;
+
+            // Mettez à jour l'état pour afficher ou masquer le bouton "ScrollTop"
+            setShowScrollTop(currentScrollY > homeBottom);
+
+            // Réinitialisez le timer à chaque fois que le défilement se produit
+            clearTimeout(timer);
+            timer = setTimeout(() => setShowScrollTop(false), 2000);
+        };
+
+        const handleTimer = () => {
+            const elapsedTime = Date.now() - lastScrollTime;
+            if (elapsedTime >= 2000) {
+                setShowScrollTop(false);
+            }
+        };
+
+        // Ajoutez les écouteurs d'événements
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('touchmove', handleScroll); // Écouteur d'événement de défilement tactile
+        timer = setInterval(handleTimer, 2000); // Vérifiez le temps écoulé toutes les 2 secondes
+
+        // Retirez les écouteurs d'événements et le timer lorsque le composant est démonté
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('touchmove', handleScroll);
+            clearInterval(timer);
+        };
+    }, [lastScrollTime]);
+
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+    };
+
+
+
+    const content = {
+        fr: {
+            title1: "Portfolio de Kamilia",
+            message: "Merci de visiter mon site personnel. Connectez-vous avec moi sur les réseaux sociaux. <br/> <br/> Continuez à monter 🚀. Connectez-vous avec moi via chat en direct !",
+            quickLinks: [
+                { label: "Accueil", href: "#home" },
+                { label: "À propos", href: "#about" },
+                { label: "Compétences", href: "#skills" },
+                { label: "Éducation", href: "#education" },
+                { label: "Travail", href: "#work" },
+                { label: "Expérience", href: "#experience" },
+            ],
+            contactInfo: {
+                phone: "+91 XXX-XXX-XXXX",
+                email: "jigarsable21@gmail.com",
+                address: "Pune, Inde-412206",
+            },
+            socials: [
+                { icon: faLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/jigar-sable/" },
+                { icon: faGithub, label: "GitHub", href: "https://github.com/jigar-sable" },
+                { icon: faInstagram, label: "Instagram", href: "https://www.instagram.com/jigarsable.dev" },
+                { icon: faFacebook, label: "Facebook", href: "https://www.facebook.com/" },
+            ],
+            credit: "Conçu avec <FontAwesomeIcon icon={faHeart} style={{color: '#ff0000'}} /> par <a href='https://www.linkedin.com/in/jigar-sable'>Aiboud Kamilia</a>"
+        },
+        en: {
+            title1: "Kamilia's Portfolio",
+            message: "Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!",
+            quickLinks: [
+                { label: "Home", href: "#home" },
+                { label: "About", href: "#about" },
+                { label: "Skills", href: "#skills" },
+                { label: "Education", href: "#education" },
+                { label: "Work", href: "#work" },
+                { label: "Experience", href: "#experience" },
+            ],
+            contactInfo: {
+                phone: "+91 XXX-XXX-XXXX",
+                email: "jigarsable21@gmail.com",
+                address: "Pune, India-412206",
+            },
+            socials: [
+                { icon: faLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/jigar-sable/" },
+                { icon: faGithub, label: "GitHub", href: "https://github.com/jigar-sable" },
+                { icon: faInstagram, label: "Instagram", href: "https://www.instagram.com/jigarsable.dev" },
+                { icon: faFacebook, label: "Facebook", href: "https://www.facebook.com/" },
+            ],
+            credit: "Designed by <a href='https://www.linkedin.com/'>Aiboud Kamilia</a>"
+        },
+    };
+
+    return (
+        <div className="footer">
+            <section className="footer">
+
+                <div className="box-container">
+                <button onClick={onToggleLang}>
+                    {lang === 'fr' ? 'EN' : 'FR'}
+                </button>
+                    <div className="box">
+                        <h3>{content[lang].title1}</h3>
+                        <p dangerouslySetInnerHTML={{ __html: content[lang].message }}></p>
+                    </div>
+                   
+                    <div className="boxe">
+                        <h3>{content[lang].quickLinksTitle}</h3>
+                        {content[lang].quickLinks.map((link, index) => (
+                            <a key={index} href={link.href}><FontAwesomeIcon icon={faChevronCircleRight} /> {link.label}</a>
+                        ))}
+                    </div>
+
+                    <div className="box">
+                        <h3>{content[lang].contactInfoTitle}</h3>
+                        <p> <FontAwesomeIcon icon={faPhone} /> {content[lang].contactInfo.phone}</p>
+                        <p> <FontAwesomeIcon icon={faEnvelope} /> {content[lang].contactInfo.email}</p>
+                        <p> <FontAwesomeIcon icon={faMapMarkerAlt} /> {content[lang].contactInfo.address}</p>
+                        <div className="share">
+                            {content[lang].socials.map((social, index) => (
+                                <i key={index}><a className={social.label.toLowerCase()} rel="noreferrer" aria-label={social.label} href={social.href} target="_blank"><FontAwesomeIcon icon={social.icon} /></a></i>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+                <h1 className="credit" dangerouslySetInnerHTML={{ __html: content[lang].credit }}></h1>
+                
+                {showScrollTop && (
+                    <a href="#home" aria-label="ScrollTop" id="scroll-top" onClick={scrollToTop} className={`fas fa-angle-up ${showScrollTop ? 'visible' : 'hidden'}`}>
+                        <FontAwesomeIcon icon={faArrowCircleUp} />
+                    </a>
+                )}
+
+               
+
+            </section>
         </div>
-    </div>
-</div>
-
-<h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/jigar-sable"> jigar sable</a></h1>
-
-</section>
-    </div>
-  );
+    );
 }
 
 export default Footer;

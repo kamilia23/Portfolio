@@ -6,20 +6,17 @@ import Experience from './experience'
 import Contact from './contact'
 import Home from './home'
 
-function Page() {
+function Page({ lang }) {
   return (
     <div className="App">
-      <body>
-        <Home/>
-        <About/>
-        <Skill />
-        <Education/>
-        <Work/>
-        <Experience/>
-        <Contact/>
-      </body>
+      <Home lang={lang} />
+      <About lang={lang} />
+      <Skill lang={lang} />
+      <Education lang={lang} />
+      <Work lang={lang} />
+      <Experience lang={lang} />
+      <Contact lang={lang} />
     </div>
   );
 }
-
 export default Page;
