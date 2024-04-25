@@ -26,58 +26,114 @@ function Skills({ lang }) {
 
          <div className="bar">
           <div className="info">
-            <img alt=" "  src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
-            <span>AdobeXD</span>
+            <img alt=" "  src="./Micros.png"/>
+            <span>Suite Microsoft Office</span>
          
           </div>
         </div> 
         <div className="bar">
           <div className="info">
-            <img alt=" "  src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
-            <span>AdobeXD</span>
+            <img alt=" "  src="./android.png"/>
+            <span>Android Studio</span>
          
           </div>
         </div> 
         <div className="bar">
           <div className="info">
-            <img  alt=" " src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
-            <span>AdobeXD</span>
+            <img  alt=" " src="./omn.jpg"/>
+            <span>OMNet++</span>
          
           </div>
         </div> 
         <div className="bar">
           <div className="info">
-            <img alt=" "  src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
-            <span>AdobeXD</span>
+            <img alt=" "  src="./vs.png"/>
+            <span>Visual Studio Code</span>
          
           </div>
         </div> 
         <div className="bar">
           <div className="info">
-            <img  alt=" " src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
-            <span>AdobeXD</span>
+            <img  alt=" " src="./node.png"/>
+            <span>NodeJs</span>
          
           </div>
         </div>  <div className="bar">
           <div className="info">
-            <img  alt=" " src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
-            <span>AdobeXD</span>
+            <img  alt=" " src="./tex.png"/>
+            <span>TeXstudio</span>
          
           </div>
         </div>  <div className="bar">
           <div className="info">
-            <img  alt=" " src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
-            <span>AdobeXD</span>
+            <img  alt=" " src="./fire.png"/>
+            <span>Firebase</span>
          
           </div>
-        </div>  <div className="bar">
+        </div>  
+        <div className="bar">
           <div className="info">
-            <img alt=" " src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
-            <span>AdobeXD</span>
+            <img alt=" " src="./react.png"/>
+            <span>Reactjs</span>
          
           </div>
         </div> 
-
+        <div className="bar">
+          <div className="info">
+            <img alt=" " src="./js.png"/>
+            <span>JavaScript</span>
+         
+          </div>
+        </div>  <div className="bar">
+          <div className="info">
+            <img alt=" " src="./py.png"/>
+            <span>Python</span>
+         
+          </div>
+        </div>  <div className="bar">
+          <div className="info">
+            <img alt=" " src="./sql.png"/>
+            <span>MySql</span>
+         
+          </div>
+        </div>  <div className="bar">
+          <div className="info">
+            <img alt=" " src="./hc.png"/>
+            <span>HTML/CSS</span>
+         
+          </div>
+        </div>  <div className="bar">
+          <div className="info">
+            <img alt=" " src="./xml.png"/>
+            <span>XML</span>
+         
+          </div>
+        </div>  <div className="bar">
+          <div className="info">
+            <img alt=" " src="./soc.png"/>
+            <span>Socket.io</span>
+         
+          </div>
+        </div>  <div className="bar">
+          <div className="info">
+            <img alt=" " src="./web.png"/>
+            <span>WebRTC</span>
+         
+          </div>
+        </div>  <div className="bar">
+          <div className="info">
+            <img alt=" " src="./prisma.png"/>
+            <span>Prisma ORM sqlite3</span>
+         
+          </div>
+        </div> 
+        <div className="bar">
+          <div className="info">
+            <img alt=" " src="./electron.png"/>
+            <span>Electron Js</span>
+         
+          </div>
+        </div> 
   </div>
 </div>
 </section>

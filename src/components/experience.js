@@ -87,29 +87,6 @@ import { faBriefcase, faArrowRight } from '@fortawesome/free-solid-svg-icons';
                 </div>
             </div>
 
-            <div className="container right">
-                <div className="content">
-                <div className="tag">
-                    <h2>{content[lang].sparkf}</h2>
-                </div>
-                <div className="desc">
-                    <h3>{content[lang].webDeveloper}</h3>
-                    <p>{content[lang].d3}</p>
-                </div>
-                </div>
-            </div>
-
-            <div className="container left">
-                <div className="content">
-                <div className="tag">
-                    <h2>{content[lang].sparkf}</h2>
-                </div>
-                <div className="desc">
-                    <h3>{content[lang].mobileApplicationDeveloper}</h3>
-                    <p>{content[lang].d4}</p>
-                </div>
-                </div>
-            </div>
 
             <div className="container right">
                 <div className="content">

@@ -55,12 +55,12 @@ function Navbar({ lang, onToggleLang }) {
                 </HashLink>
                 <HashLink exact="true" to="/#education">
                     <button className={activeItem === 'education' ? 'homen' : 'vvd'} onClick={() => setActiveItem('education')}>
-                        <span>{lang === 'fr' ? 'Éducation' : 'Education'}</span>
+                        <span>{lang === 'fr' ? 'Formations' : 'Formations'}</span>
                     </button>
                 </HashLink>
                 <HashLink exact="true" to="/#work">
                     <button className={activeItem === 'work' ? 'homen' : 'vvd'} onClick={() => setActiveItem('work')}>
-                        <span>{lang === 'fr' ? 'Travail' : 'Work'}</span>
+                        <span>{lang === 'fr' ? 'Projets' : 'Projects'}</span>
                     </button>
                 </HashLink>
                 <HashLink exact="true" to="/#experience">

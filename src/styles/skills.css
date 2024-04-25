@@ -5,6 +5,10 @@
   .skills h2 {
     color: #fff;
   }
+  .skills img {
+    height: 50px;
+    width: 70px;
+  }
   .skills .heading  {
     color: rgb(0, 0, 0);
     text-align: center;

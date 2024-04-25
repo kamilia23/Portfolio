@@ -8,16 +8,16 @@ import { faUser, faDownload } from '@fortawesome/free-solid-svg-icons';
 function About({lang}) {
   const content = {
     fr: {
-      title: 'Développeur Full Stack',
+      title: 'Développeuse Full Stack',
       name: 'Je suis Kamilia',
       me: 'Moi',
       about: 'À propos de',
-      text: 'Je suis un développeur Full-Stack basé à Pune, en Inde. Je suis un étudiant de premier cycle en technologie de l\'information du SPPU. Je suis très passionné par l\'amélioration de mes compétences en codage & développement d\'applications et de sites Web. Je crée des WebApps et des sites Web à l\'aide de MERN Stack. Travailler à mon compte pour améliorer mes compétences. J\'adore créer des clones Full-Stack.',
+      text: 'Je suis une développeuse Full-Stack basée à Tizi-Ouzou, en Algérie. J\'ai 25 ans et je suis très passionnée par l\'amélioration de mes compétences en codage et développement d\'applications et de sites Web. Je crée des WebApps et des sites Web à l\'aide de MERN Stack. Travailler à mon compte pour améliorer mes compétences. J\'adore créer des clones Full-Stack.',
       details: {
-        age: 'Âge : 20 ans',
-        phone: 'Téléphone : +91 XXX-XXX-XXXX',
-        email: 'Email : jigarsable21@gmail.com',
-        place: 'Lieu : Pune, Inde - 412206'
+        age: 'Âge : 25 ans',
+        phone: 'Téléphone : 0658550388',
+        email: 'Email : aiboudkamilia4@gmail.com',
+        place: 'Lieu : Beni-Douala, Tizi-Ouzou, Algérie - 15011'
       },
       cv: 'Télécharger le CV'
     },
@@ -26,16 +26,17 @@ function About({lang}) {
       name: 'I\'m Kamilia',
       me: 'Me',
       about: 'About',
-      text: 'I am a Full-Stack developer based in Pune, India. I am an Information Technology undergraduate from SPPU. I am very passionate about improving my coding skills & developing applications & websites. I build WebApps and Websites using MERN Stack. Working for myself to improve my skills. Love to build Full-Stack clones.',
+      text: 'I am a Full-Stack developer based in Tizi-Ouzou, Algeria. I am 25 years old and very passionate about improving my coding skills & developing applications & websites. I build WebApps and Websites using MERN Stack. Working for myself to improve my skills. Love to build Full-Stack clones.',
       details: {
-        age: 'Age: 20',
-        phone: 'Phone: +91 XXX-XXX-XXXX',
-        email: 'Email: jigarsable21@gmail.com',
-        place: 'Place: Pune, India - 412206'
+        age: 'Age: 25',
+        phone: 'Phone: 0658550388',
+        email: 'Email: aiboudkamilia4@gmail.com',
+        place: 'Place: Beni-Douala, Tizi-Ouzou, Algeria - 15011'
       },
       cv: 'Download CV'
     },
   };
+  
     return (
       <div className="about">
         <section className="about" id="about">

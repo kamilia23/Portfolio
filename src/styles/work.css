@@ -1,6 +1,6 @@
 .work {
     margin-top: -10px;
-    min-height: 80vh;
+    min-height: 140vh;
     background: linear-gradient(to bottom, #000031, #00002c);
   }
   .work h2 {
@@ -12,8 +12,8 @@
     text-align: center;
   }
   .work .box-container {
-  
-    max-width: 100%;
+    min-width: 90%;
+    max-width: 10%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;

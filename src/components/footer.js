@@ -6,7 +6,6 @@ import {
     faPhone, 
     faEnvelope, 
     faMapMarkerAlt, 
-    faHeart, 
     faChevronCircleRight 
 } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -73,14 +72,14 @@ function Footer({ lang, onToggleLang }) {
                 { label: "Accueil", href: "#home" },
                 { label: "À propos", href: "#about" },
                 { label: "Compétences", href: "#skills" },
-                { label: "Éducation", href: "#education" },
-                { label: "Travail", href: "#work" },
+                { label: "Formations", href: "#education" },
+                { label: "Projets", href: "#work" },
                 { label: "Expérience", href: "#experience" },
             ],
             contactInfo: {
-                phone: "+91 XXX-XXX-XXXX",
-                email: "jigarsable21@gmail.com",
-                address: "Pune, Inde-412206",
+                phone: "+213 0658550388",
+                email: "aiboudkamilia4@gmail.com",
+                address: "Tizi-Ouzou, Algerie-15011",
             },
             socials: [
                 { icon: faLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/jigar-sable/" },
@@ -88,7 +87,7 @@ function Footer({ lang, onToggleLang }) {
                 { icon: faInstagram, label: "Instagram", href: "https://www.instagram.com/jigarsable.dev" },
                 { icon: faFacebook, label: "Facebook", href: "https://www.facebook.com/" },
             ],
-            credit: "Conçu avec <FontAwesomeIcon icon={faHeart} style={{color: '#ff0000'}} /> par <a href='https://www.linkedin.com/in/jigar-sable'>Aiboud Kamilia</a>"
+            credit: "Crée par <FontAwesomeIcon icon={faHeart} style={{color: '#ff0000'}} /> par <a href='https://www.linkedin.com/in/jigar-sable'>Aiboud Kamilia</a>"
         },
         en: {
             title1: "Kamilia's Portfolio",
@@ -97,22 +96,22 @@ function Footer({ lang, onToggleLang }) {
                 { label: "Home", href: "#home" },
                 { label: "About", href: "#about" },
                 { label: "Skills", href: "#skills" },
-                { label: "Education", href: "#education" },
-                { label: "Work", href: "#work" },
+                { label: "Formations", href: "#education" },
+                { label: "Projects", href: "#work" },
                 { label: "Experience", href: "#experience" },
             ],
             contactInfo: {
-                phone: "+91 XXX-XXX-XXXX",
-                email: "jigarsable21@gmail.com",
-                address: "Pune, India-412206",
-            },
+                phone: "+213 0658550388",
+                email: "aiboudkamilia4@gmail.com",
+                address: "Tizi-Ouzou, Algeria-15011",
+             },
             socials: [
                 { icon: faLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/jigar-sable/" },
                 { icon: faGithub, label: "GitHub", href: "https://github.com/jigar-sable" },
                 { icon: faInstagram, label: "Instagram", href: "https://www.instagram.com/jigarsable.dev" },
                 { icon: faFacebook, label: "Facebook", href: "https://www.facebook.com/" },
             ],
-            credit: "Designed by <a href='https://www.linkedin.com/'>Aiboud Kamilia</a>"
+            credit: "Created by <a href='https://www.linkedin.com/'>Aiboud Kamilia</a>"
         },
     };
 

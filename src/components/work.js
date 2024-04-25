@@ -83,12 +83,48 @@ function Work({ lang }) {
     </div>
     
   </div>
+  <div className="box tilt">
+        <img draggable="false" src="./avatar.png" alt="" />
+ 
+    <div className="content">
+      <div className="tag">
+      <h3>{content[lang].tag}</h3>
+      </div>
+      <div className="desc">
+      <p>{content[lang].desc}</p>
+        <div className="btns">
+          <a href="/some-meaningful-url" className="btn"  target="_blank"><FontAwesomeIcon icon={faEye} /> </a>
+          <a href="https://github.com/kamilia23" className="btn" rel="noreferrer" target="_blank" > <FontAwesomeIcon icon={faCode} /></a>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+  <div className="box tilt">
+        <img draggable="false" src="./avatar.png" alt="" />
+ 
+    <div className="content">
+      <div className="tag">
+      <h3>{content[lang].tag}</h3>
+      </div>
+      <div className="desc">
+      <p>{content[lang].desc}</p>
+        <div className="btns">
+          <a href="/some-meaningful-url" className="btn"  target="_blank"><FontAwesomeIcon icon={faEye} /> </a>
+          <a href="https://github.com/kamilia23" className="btn" rel="noreferrer" target="_blank" > <FontAwesomeIcon icon={faCode} /></a>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
   
 
 </div>
 
 <div className="viewall">
-<a href="/projects" className="btn"><span>{content[lang].viewAll}</span>
+<a href="/projects" className="btn"><span>{content[lang].viewAll} </span>
 <FontAwesomeIcon icon={faArrowRight} />
 </a>
 </div>
