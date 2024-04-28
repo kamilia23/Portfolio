@@ -67,7 +67,7 @@ function Footer({ lang, onToggleLang }) {
     const content = {
         fr: {
             title1: "Portfolio de Kamilia",
-            message: "Merci de visiter mon site personnel. Connectez-vous avec moi sur les réseaux sociaux. <br/> <br/> Continuez à monter 🚀. Connectez-vous avec moi via chat en direct !",
+            message: "N'hésitez pas à explorer les différentes sections pour découvrir les projets, articles et autres contenus. Votre visite est grandement appréciée ! ",
             quickLinks: [
                 { label: "Accueil", href: "#home" },
                 { label: "À propos", href: "#about" },
@@ -87,11 +87,11 @@ function Footer({ lang, onToggleLang }) {
                 { icon: faInstagram, label: "Instagram", href: "https://www.instagram.com/jigarsable.dev" },
                 { icon: faFacebook, label: "Facebook", href: "https://www.facebook.com/" },
             ],
-            credit: "Crée par <FontAwesomeIcon icon={faHeart} style={{color: '#ff0000'}} /> par <a href='https://www.linkedin.com/in/jigar-sable'>Aiboud Kamilia</a>"
+            credit: "Crée par <a href='https://www.linkedin.com/in/jigar-sable'>Aiboud Kamilia</a>"
         },
         en: {
             title1: "Kamilia's Portfolio",
-            message: "Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!",
+            message: "Do not hesitate to explore the different sections to discover projects, articles and other content. Your visit is greatly appreciated!",
             quickLinks: [
                 { label: "Home", href: "#home" },
                 { label: "About", href: "#about" },

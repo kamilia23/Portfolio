@@ -134,6 +134,20 @@ function Skills({ lang }) {
          
           </div>
         </div> 
+        <div className="bar">
+          <div className="info">
+            <img alt=" " src="./Wamp.png"/>
+            <span>WampServer</span>
+         
+          </div>
+        </div> 
+        <div className="bar">
+          <div className="info">
+            <img alt=" " src="./Php.png"/>
+            <span>PhpMyAdmin</span>
+         
+          </div>
+        </div> 
   </div>
 </div>
 </section>

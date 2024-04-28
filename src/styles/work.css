@@ -10,6 +10,8 @@
   .work .heading  {
     color: #06dba6;
     text-align: center;
+    font-size: 2rem;
+    margin-top: 10px;
   }
   .work .box-container {
     min-width: 90%;
@@ -48,13 +50,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 3rem;
+    height: 4rem;
     width: 100%;
     padding-left: 1rem;
     background: #06dba6;
   }
   .work .box-container .box .content .tag h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .work .box-container .box:hover .content {
     top: 20%;
@@ -66,13 +68,13 @@
     justify-content: center;
   }
   .work .desc p {
-    font-size: 1.1rem;
+    font-size: 0.7rem;
   }
   .work .desc .btns {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
   .work .desc .btns .btn {
     line-height: 0;

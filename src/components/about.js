@@ -12,10 +12,10 @@ function About({lang}) {
       name: 'Je suis Kamilia',
       me: 'Moi',
       about: 'À propos de',
-      text: 'Je suis une développeuse Full-Stack basée à Tizi-Ouzou, en Algérie. J\'ai 25 ans et je suis très passionnée par l\'amélioration de mes compétences en codage et développement d\'applications et de sites Web. Je crée des WebApps et des sites Web à l\'aide de MERN Stack. Travailler à mon compte pour améliorer mes compétences. J\'adore créer des clones Full-Stack.',
+      text: 'Je suis une développeuse Full-Stack basée à Tizi-Ouzou, en Algérie, âgée de 25 ans. Mon enthousiasme se nourrit de l\'amélioration constante de mes compétences en codage et en développement d\'applications desktop, ainsi que de sites Web. Je me spécialise dans la création de WebApps et de sites Web en utilisant ReactJS. Actuellement, je suis ingénieure en système d\'information au sein d\'une entreprise.',
       details: {
         age: 'Âge : 25 ans',
-        phone: 'Téléphone : 0658550388',
+        phone: 'Téléphone : +213 0658550388',
         email: 'Email : aiboudkamilia4@gmail.com',
         place: 'Lieu : Beni-Douala, Tizi-Ouzou, Algérie - 15011'
       },
@@ -26,12 +26,12 @@ function About({lang}) {
       name: 'I\'m Kamilia',
       me: 'Me',
       about: 'About',
-      text: 'I am a Full-Stack developer based in Tizi-Ouzou, Algeria. I am 25 years old and very passionate about improving my coding skills & developing applications & websites. I build WebApps and Websites using MERN Stack. Working for myself to improve my skills. Love to build Full-Stack clones.',
+      text: 'I am a 25 year old Full-Stack Developer based in Tizi-Ouzou, Algeria. My enthusiasm is fueled by the constant improvement of my skills in coding and developing desktop applications, as well as websites. I specialize in creating WebApps and websites using ReactJS. Currently, I am an information systems engineer within a company.',
       details: {
-        age: 'Age: 25',
-        phone: 'Phone: 0658550388',
-        email: 'Email: aiboudkamilia4@gmail.com',
-        place: 'Place: Beni-Douala, Tizi-Ouzou, Algeria - 15011'
+        age: 'Age : 25 years old',
+        phone: 'Phone : +213 0658550388',
+        email: 'Email : aiboudkamilia4@gmail.com',
+        place: 'Place : Beni-Douala, Tizi-Ouzou, Algeria - 15011'
       },
       cv: 'Download CV'
     },
