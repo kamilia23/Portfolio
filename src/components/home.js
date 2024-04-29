@@ -51,7 +51,7 @@ function Home({lang}) {
     return () => clearInterval(interval);
   }, [textIndex]);
 
-
+     
 
   return (
     <div>
