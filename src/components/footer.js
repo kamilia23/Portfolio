@@ -84,12 +84,10 @@ function Footer({ lang, onToggleLang }) {
                 address: "Tizi-Ouzou, Algerie",
             },
             socials: [
-                { icon: faLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/jigar-sable/" },
-                { icon: faGithub, label: "GitHub", href: "https://github.com/jigar-sable" },
-                { icon: faInstagram, label: "Instagram", href: "https://www.instagram.com/jigarsable.dev" },
-                { icon: faFacebook, label: "Facebook", href: "https://www.facebook.com/" },
-            ],
-            credit: "Crée par <a href='https://www.linkedin.com/in/jigar-sable'> Kamilia kami</a>"
+                { icon: faLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/kamilia-kami-134827255" },
+                { icon: faGithub, label: "GitHub", href: "https://github.com/kamilia23" },
+                 ],
+            credit: "Crée par <a href='https://github.com/kamilia23'>Kamilia kami</a>"
         },
         en: {
             title1: "Kamilia's Portfolio",
@@ -113,7 +111,7 @@ function Footer({ lang, onToggleLang }) {
                
                 
             ],
-            credit: "Created by <a href='https://www.linkedin.com/'>Aiboud Kamilia</a>"
+            credit: "Created by <a href='https://www.linkedin.com/'>Kamilia Kami</a>"
         },
     };
 

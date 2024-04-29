@@ -44,7 +44,7 @@ function About({lang}) {
             
             <div className="row">
               <div className="image">
-                  <img draggable="false" src={`../avatar.png`} alt=""/>
+                  <img draggable="false" src="./avatar.png" alt=""/>
               </div>
               <div className="content">
                   <h3>{content[lang].name}</h3>
