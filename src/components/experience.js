@@ -100,11 +100,11 @@ import { faBriefcase, faArrowRight } from '@fortawesome/free-solid-svg-icons';
             </div>
             </div>
 
-            <div className="morebtn">
+         {  /* <div className="morebtn">
             <a href="/experience" className="btn"><span>{content[lang].viewAll} </span>
             <FontAwesomeIcon icon={faArrowRight} />
             </a>
-            </div>
+            </div>*/}
 
        
 

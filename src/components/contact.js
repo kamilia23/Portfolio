@@ -3,12 +3,15 @@ import React, { useState , useRef} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeadset, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import emailjs from '@emailjs/browser'; 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 function Contact({lang}) {
 
   const content = {
     fr: {
-      heading: 'Contactez-moi',
+      heading: 'Contactez-moi pour plus d\'informations',
       name: 'Nom',
       email: 'Email',
       phone: 'Téléphone',
@@ -16,7 +19,7 @@ function Contact({lang}) {
       submit: 'Envoyer',
     },
     en: {
-      heading: 'Get in Touch',
+      heading: 'Get in Touch for more informations',
       name: 'Name',
       email: 'Email',
       phone: 'Phone',
@@ -51,10 +54,27 @@ function Contact({lang}) {
       .sendForm('service_6mu9iks', 'template_7p4nh9c',e.target, 'toR3LHvFRuwye2RE9')
       .then(
         () => {
-          console.log('SUCCESS!');
+
+          toast.success("le message est envoyé", {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+          });
+          
         },
         (error) => {
-          console.log('FAILED...', error);
+          toast.error("une erreur s'est produite!", {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+        });
+        return error
         },
       );
   };
@@ -62,6 +82,7 @@ function Contact({lang}) {
 
   return (
     <div className="contact">
+      <ToastContainer />
       <section className="contact" id="contact">
         <h2 className="heading">
           <FontAwesomeIcon icon={faHeadset} /> {content[lang].heading}

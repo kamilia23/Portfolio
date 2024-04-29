@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/work.css"
 import { faArrowRight, faCode, faEye, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function Work({ lang }) {
   
@@ -55,8 +56,8 @@ function Work({ lang }) {
         <p>{content[lang].desc4}</p>
         <div className="btns">
           
-          <a href="/some-meaningful-url" className="btn" target="_blank"><FontAwesomeIcon icon={faEye} />  </a>
-          <a href="https://github.com/kamilia23" rel="noreferrer" className="btn" target="_blank"> <FontAwesomeIcon icon={faCode} /></a>
+        <Link to="/notfound" className="btn" ><FontAwesomeIcon icon={faEye} /> </Link>
+          <a href="https://github.com/kamilia23/Portfolio" rel="noreferrer" className="btn" target="_blank"> <FontAwesomeIcon icon={faCode} /></a>
         </div>
       </div>
       
@@ -73,8 +74,8 @@ function Work({ lang }) {
       <div className="desc">
       <p>{content[lang].desc3}</p>
         <div className="btns">
-          <a href="/some-meaningful-url" className="btn" target="_blank"><FontAwesomeIcon icon={faEye} />  </a>
-          <a href="https://github.com/kamilia23" className="btn" rel="noreferrer" target="_blank"> <FontAwesomeIcon icon={faCode} /></a>
+        <Link to="/notfound" className="btn"><FontAwesomeIcon icon={faEye} /> </Link>
+          <a href="https://github.com/kamilia23/Application-finale-de-facturation" className="btn" rel="noreferrer" target="_blank"> <FontAwesomeIcon icon={faCode} /></a>
         </div>
       </div>
       
@@ -91,8 +92,8 @@ function Work({ lang }) {
       <div className="desc">
       <p>{content[lang].desc2}</p>
         <div className="btns">
-          <a href="/some-meaningful-url" className="btn"  target="_blank"><FontAwesomeIcon icon={faEye} /> </a>
-          <a href="https://github.com/kamilia23" className="btn" rel="noreferrer" target="_blank" > <FontAwesomeIcon icon={faCode} /></a>
+          <Link to="/notfound" className="btn"><FontAwesomeIcon icon={faEye} /> </Link>
+          <a href="https://github.com/kamilia23/m-moire-face-recognition-using-cnn" className="btn" rel="noreferrer" target="_blank" > <FontAwesomeIcon icon={faCode} /></a>
         </div>
       </div>
       
@@ -109,8 +110,8 @@ function Work({ lang }) {
       <div className="desc">
       <p>{content[lang].desc}</p>
         <div className="btns">
-          <a href="/some-meaningful-url" className="btn"  target="_blank"><FontAwesomeIcon icon={faEye} /> </a>
-          <a href="https://github.com/kamilia23" className="btn" rel="noreferrer" target="_blank" > <FontAwesomeIcon icon={faCode} /></a>
+          <a href="https://comeetium-ap.web.app/" rel="noreferrer" className="btn"  target="_blank"><FontAwesomeIcon icon={faEye} /> </a>
+          <a href="https://github.com/kamilia23/comeetfinal" className="btn" rel="noreferrer" target="_blank" > <FontAwesomeIcon icon={faCode} /></a>
         </div>
       </div>
       
@@ -127,8 +128,8 @@ function Work({ lang }) {
       <div className="desc">
       <p>{content[lang].desc}</p>
         <div className="btns">
-          <a href="/some-meaningful-url" className="btn"  target="_blank"><FontAwesomeIcon icon={faEye} /> </a>
-          <a href="https://github.com/kamilia23" className="btn" rel="noreferrer" target="_blank" > <FontAwesomeIcon icon={faCode} /></a>
+        <Link to="/notfound" className="btn" ><FontAwesomeIcon icon={faEye} /> </Link>
+          <a href="/notfound" className="btn" rel="noreferrer" target="_blank" > <FontAwesomeIcon icon={faCode} /></a>
         </div>
       </div>
       
@@ -139,11 +140,11 @@ function Work({ lang }) {
 
 </div>
 
-<div className="viewall">
+{/*<div className="viewall">
 <a href="/projects" className="btn"><span>{content[lang].viewAll} </span>
 <FontAwesomeIcon icon={faArrowRight} />
 </a>
-</div>
+</div>*/}
 
 </section>
       </div>

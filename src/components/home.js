@@ -65,11 +65,10 @@ function Home({lang}) {
         </a>
         <div className="socials">
             <ul className="social-icons">
-              <li><a className="linkedin" rel="noreferrer" aria-label="LinkedIn" href="https://www.linkedin.com/in/jigar-sable/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a></li> 
-              <li><a className="github" rel="noreferrer" aria-label="GitHub" href="https://github.com/jigar-sable" target="_blank"><FontAwesomeIcon icon={faGithub} /></a></li>
-              <li><a className="instagram" rel="noreferrer" aria-label="Instagram" href="https://www.instagram.com/jigarsable.dev"><FontAwesomeIcon icon={faInstagram} /></a></li>
-              <li><a className="facebook" rel="noreferrer" aria-label="Facebook" href="https://www.facebook.com/" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a></li>
-            </ul>
+              <li><a className="linkedin" rel="noreferrer" aria-label="LinkedIn" href="https://www.linkedin.com/in/kamilia-kami-134827255" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a></li> 
+              <li><a className="github" rel="noreferrer" aria-label="GitHub" href="https://github.com/kamilia23" target="_blank"><FontAwesomeIcon icon={faGithub} /></a></li>
+             </ul>
+             
           </div>
         </div>
         <div className="image">

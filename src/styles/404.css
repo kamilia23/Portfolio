@@ -1,0 +1,65 @@
+/* Styles de base pour la page 404 */
+.page_404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+.page_404 .container {
+    text-align: center;
+    background-color: #bcbdbe;
+    
+}
+.fr {
+    text-decoration: underline;
+    margin-top: 500px;
+    color: #666;
+    position: absolute;
+    cursor: pointer;
+}
+
+.wrapper {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: bold;
+    color: #2e2e2e;
+}
+
+.msg h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.msg p {
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.backbtn .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+.backbtn .btn:hover {
+    background-color: #0056b3;
+}
+
+.backbtn .btn i {
+    margin-right: 5px;
+}

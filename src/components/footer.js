@@ -77,9 +77,9 @@ function Footer({ lang, onToggleLang }) {
                 { label: "Expérience", href: "#experience" },
             ],
             contactInfo: {
-                phone: "+213 0658550388",
-                email: "aiboudkamilia4@gmail.com",
-                address: "Tizi-Ouzou, Algerie-15011",
+                phone: "+213 06XXXXXXXX",
+                email: "XXXXXXXXX@gmail.com",
+                address: "Tizi-Ouzou, Algerie",
             },
             socials: [
                 { icon: faLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/jigar-sable/" },
@@ -91,7 +91,7 @@ function Footer({ lang, onToggleLang }) {
         },
         en: {
             title1: "Kamilia's Portfolio",
-            message: "Do not hesitate to explore the different sections to discover projects, articles and other content. Your visit is greatly appreciated!",
+            message: "Don't hesitate to explore the different sections to discover projects, articles and other content. Your visit is greatly appreciated!",
             quickLinks: [
                 { label: "Home", href: "#home" },
                 { label: "About", href: "#about" },
@@ -101,15 +101,15 @@ function Footer({ lang, onToggleLang }) {
                 { label: "Experience", href: "#experience" },
             ],
             contactInfo: {
-                phone: "+213 0658550388",
-                email: "aiboudkamilia4@gmail.com",
-                address: "Tizi-Ouzou, Algeria-15011",
+                phone: "+213 06XXXXXXXX",
+                email: "XXXXXXXXX@gmail.com",
+                address: "Tizi-Ouzou, Algeria",
              },
             socials: [
-                { icon: faLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/jigar-sable/" },
-                { icon: faGithub, label: "GitHub", href: "https://github.com/jigar-sable" },
-                { icon: faInstagram, label: "Instagram", href: "https://www.instagram.com/jigarsable.dev" },
-                { icon: faFacebook, label: "Facebook", href: "https://www.facebook.com/" },
+                { icon: faLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/kamilia-kami-134827255" },
+                { icon: faGithub, label: "GitHub", href: "https://github.com/kamilia23" },
+               
+                
             ],
             credit: "Created by <a href='https://www.linkedin.com/'>Aiboud Kamilia</a>"
         },
@@ -137,8 +137,8 @@ function Footer({ lang, onToggleLang }) {
 
                     <div className="box">
                         <h3>{content[lang].contactInfoTitle}</h3>
-                        <p> <FontAwesomeIcon icon={faPhone} /> {content[lang].contactInfo.phone}</p>
-                        <p> <FontAwesomeIcon icon={faEnvelope} /> {content[lang].contactInfo.email}</p>
+                      {/*  <p> <FontAwesomeIcon icon={faPhone} /> {content[lang].contactInfo.phone}</p>
+                        <p> <FontAwesomeIcon icon={faEnvelope} /> {content[lang].contactInfo.email}</p>*/}
                         <p> <FontAwesomeIcon icon={faMapMarkerAlt} /> {content[lang].contactInfo.address}</p>
                         <div className="share">
                             {content[lang].socials.map((social, index) => (

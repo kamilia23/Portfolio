@@ -15,9 +15,9 @@ function About({lang}) {
       text: 'Je suis une développeuse Full-Stack basée à Tizi-Ouzou, en Algérie, âgée de 25 ans. Mon enthousiasme se nourrit de l\'amélioration constante de mes compétences en codage et en développement d\'applications desktop, ainsi que de sites Web. Je me spécialise dans la création de WebApps et de sites Web en utilisant ReactJS. Actuellement, je suis ingénieure en système d\'information au sein d\'une entreprise.',
       details: {
         age: 'Âge : 25 ans',
-        phone: 'Téléphone : +213 0658550388',
-        email: 'Email : aiboudkamilia4@gmail.com',
-        place: 'Lieu : Beni-Douala, Tizi-Ouzou, Algérie - 15011'
+        phone: 'Téléphone : +213 06XXXXXXXX',
+        email: 'Email : XXXXXXXXXX@gmail.com',
+        place: 'Lieu : Tizi-Ouzou, Algérie'
       },
       cv: 'Télécharger le CV'
     },
@@ -29,9 +29,9 @@ function About({lang}) {
       text: 'I am a 25 year old Full-Stack Developer based in Tizi-Ouzou, Algeria. My enthusiasm is fueled by the constant improvement of my skills in coding and developing desktop applications, as well as websites. I specialize in creating WebApps and websites using ReactJS. Currently, I am an information systems engineer within a company.',
       details: {
         age: 'Age : 25 years old',
-        phone: 'Phone : +213 0658550388',
-        email: 'Email : aiboudkamilia4@gmail.com',
-        place: 'Place : Beni-Douala, Tizi-Ouzou, Algeria - 15011'
+        phone: 'Phone : +213 06XXXXXXXX',
+        email: 'Email : XXXXXXXXXX@gmail.com',
+        place: 'Place : Tizi-Ouzou, Algeria'
       },
       cv: 'Download CV'
     },
@@ -55,8 +55,8 @@ function About({lang}) {
                   <div className="box-container">
                       <div className="box">
           <p><span>{content[lang].details.age}</span></p>
-          <p><span>{content[lang].details.phone}</span></p>
-          <p><span>{content[lang].details.email}</span></p>
+        { /* <p><span>{content[lang].details.phone}</span></p>
+          <p><span>{content[lang].details.email}</span></p>*/}
           <p><span>{content[lang].details.place}</span></p>
         </div>
                   </div>
