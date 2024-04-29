@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { faLinkedin, faGithub, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { HashLink } from 'react-router-hash-link';
 
 
 function Home({lang}) {
@@ -60,9 +61,9 @@ function Home({lang}) {
         <div className="content">
         <h2>{content[lang].title},<br/> {content[lang].name} <span>Kamilia</span></h2>
         <p>{content[lang].to} <span className="typing-text">{displayedText}</span></p>
-        <a href="#about" className="btn"><span>{content[lang].about} </span>
+        <HashLink smooth to="#about" className="btn"><span>{content[lang].about} </span>
         <FontAwesomeIcon icon={faCircleArrowDown} />
-        </a>
+        </HashLink>
         <div className="socials">
             <ul className="social-icons">
               <li><a className="linkedin" rel="noreferrer" aria-label="LinkedIn" href="https://www.linkedin.com/in/kamilia-kami-134827255" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a></li> 

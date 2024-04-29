@@ -38,37 +38,37 @@ function Navbar({ lang, onToggleLang }) {
             </HashLink>
            
             <ul className="NavItem">
-                <HashLink exact="true" to="/#home">
+                <HashLink smooth to="/#home">
                     <button className={activeItem === 'home' ? 'homen' : 'vvd'} onClick={() => setActiveItem('home')}>
                         <span>{lang === 'fr' ? 'Accueil' : 'Home'}</span>
                     </button>
                 </HashLink>
-                <HashLink exact="true" to="/#about">
+                <HashLink smooth to="/#about">
                     <button className={activeItem === 'about' ? 'homen' : 'vvd'} onClick={() => setActiveItem('about')}>
                         <span>{lang === 'fr' ? 'À propos' : 'About'}</span>
                     </button>
                 </HashLink>
-                <HashLink exact="true" to="/#skills">
+                <HashLink smooth to="/#skills">
                     <button className={activeItem === 'skills' ? 'homen' : 'vvd'} onClick={() => setActiveItem('skills')}>
                         <span>{lang === 'fr' ? 'Compétences' : 'Skills'}</span>
                     </button>
                 </HashLink>
-                <HashLink exact="true" to="/#education">
+                <HashLink smooth to="/#education">
                     <button className={activeItem === 'education' ? 'homen' : 'vvd'} onClick={() => setActiveItem('education')}>
                         <span>{lang === 'fr' ? 'Formations' : 'Formations'}</span>
                     </button>
                 </HashLink>
-                <HashLink exact="true" to="/#work">
+                <HashLink smooth to="/#work">
                     <button className={activeItem === 'work' ? 'homen' : 'vvd'} onClick={() => setActiveItem('work')}>
                         <span>{lang === 'fr' ? 'Projets' : 'Projects'}</span>
                     </button>
                 </HashLink>
-                <HashLink exact="true" to="/#experience">
+                <HashLink smooth to="/#experience">
                     <button className={activeItem === 'experience' ? 'homen' : 'vvd'} onClick={() => setActiveItem('experience')}>
                         <span>{lang === 'fr' ? 'Expérience' : 'Experience'}</span>
                     </button>
                 </HashLink>
-                <HashLink exact="true" to="/#contact">
+                <HashLink smooth to="/#contact">
                     <button className={activeItem === 'contact' ? 'homen' : 'vvd'} onClick={() => setActiveItem('contact')}>
                         <span>{lang === 'fr' ? 'Contact' : 'Contact'}</span>
                     </button>

@@ -19,6 +19,7 @@ function App() {
           {/* Route pour la page d'accueil */}
           <Route path="/" element={
             <>
+            
               <Navbar lang={lang} onToggleLang={toggleLang} />
               <Page lang={lang} />
               <Footer  lang={lang} onToggleLang={toggleLang} />

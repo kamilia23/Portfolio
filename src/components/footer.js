@@ -9,6 +9,8 @@ import {
     faChevronCircleRight 
 } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 
 function Footer({ lang, onToggleLang }) {
@@ -69,12 +71,12 @@ function Footer({ lang, onToggleLang }) {
             title1: "Portfolio de Kamilia",
             message: "N'hésitez pas à explorer les différentes sections pour découvrir les projets, articles et autres contenus. Votre visite est grandement appréciée ! ",
             quickLinks: [
-                { label: "Accueil", href: "#home" },
-                { label: "À propos", href: "#about" },
-                { label: "Compétences", href: "#skills" },
-                { label: "Formations", href: "#education" },
-                { label: "Projets", href: "#work" },
-                { label: "Expérience", href: "#experience" },
+                { label: "Accueil", to: "#home" },
+                { label: "À propos", to: "#about" },
+                { label: "Compétences", to: "#skills" },
+                { label: "Formations", to: "#education" },
+                { label: "Projets", to: "#work" },
+                { label: "Expérience", to: "#experience" },
             ],
             contactInfo: {
                 phone: "+213 06XXXXXXXX",
@@ -93,12 +95,12 @@ function Footer({ lang, onToggleLang }) {
             title1: "Kamilia's Portfolio",
             message: "Don't hesitate to explore the different sections to discover projects, articles and other content. Your visit is greatly appreciated!",
             quickLinks: [
-                { label: "Home", href: "#home" },
-                { label: "About", href: "#about" },
-                { label: "Skills", href: "#skills" },
-                { label: "Formations", href: "#education" },
-                { label: "Projects", href: "#work" },
-                { label: "Experience", href: "#experience" },
+                { label: "Home", to: "#home" },
+                { label: "About", to: "#about" },
+                { label: "Skills", to: "#skills" },
+                { label: "Formations", to: "#education" },
+                { label: "Projects", to: "#work" },
+                { label: "Experience", to: "#experience" },
             ],
             contactInfo: {
                 phone: "+213 06XXXXXXXX",
@@ -131,7 +133,10 @@ function Footer({ lang, onToggleLang }) {
                     <div className="boxe">
                         <h3>{content[lang].quickLinksTitle}</h3>
                         {content[lang].quickLinks.map((link, index) => (
-                            <a key={index} href={link.href}><FontAwesomeIcon icon={faChevronCircleRight} /> {link.label}</a>
+                            <HashLink smooth key={index} to={link.to}>
+                                <FontAwesomeIcon icon={faChevronCircleRight} />
+                                 {link.label}
+                            </HashLink>
                         ))}
                     </div>
 
@@ -151,9 +156,10 @@ function Footer({ lang, onToggleLang }) {
                 <h1 className="credit" dangerouslySetInnerHTML={{ __html: content[lang].credit }}></h1>
                 
                 {showScrollTop && (
-                    <a href="#home" aria-label="ScrollTop" id="scroll-top" onClick={scrollToTop} className={`fas fa-angle-up ${showScrollTop ? 'visible' : 'hidden'}`}>
+                   <Link to="/#home"><p aria-label="ScrollTop" id="scroll-top" onClick={scrollToTop} className={`fas fa-angle-up ${showScrollTop ? 'visible' : 'hidden'}`}>
                         <FontAwesomeIcon icon={faArrowCircleUp} />
-                    </a>
+                    </p>
+                    </Link> 
                 )}
 
                
