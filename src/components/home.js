@@ -14,20 +14,20 @@ function Home({lang}) {
   const content = {
     fr: {
       title: 'Salut',
-      name: 'Je m\'appelle Aiboud',
+      name: 'Je m\'appelle ',
       to: 'je suis dans',
       about: 'Sur Moi'
     },
     en: {
       title: 'Hi There',
-      name: 'I\'m Aiboud',
+      name: 'I\'m ',
       to: 'I am into',
       about: 'About Me'
     },
   };
 
   useEffect(() => {
-    const texts = ["frontend development", "backend development", "web designing", "android development", "web development"];
+    const texts = ["frontend development", "backend development", "web development"];
 
     let currentIndex = 0;
     let currentText = '';
@@ -59,7 +59,7 @@ function Home({lang}) {
      
 
         <div className="content">
-        <h2>{content[lang].title},<br/> {content[lang].name} <span>Kamilia</span></h2>
+        <h2>{content[lang].title}, {content[lang].name} <span>Kamilia</span></h2>
         <p>{content[lang].to} <span className="typing-text">{displayedText}</span></p>
         <HashLink smooth to="#about" className="btn"><span>{content[lang].about} </span>
         <FontAwesomeIcon icon={faCircleArrowDown} />

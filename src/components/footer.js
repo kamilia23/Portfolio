@@ -89,7 +89,7 @@ function Footer({ lang, onToggleLang }) {
                 { icon: faInstagram, label: "Instagram", href: "https://www.instagram.com/jigarsable.dev" },
                 { icon: faFacebook, label: "Facebook", href: "https://www.facebook.com/" },
             ],
-            credit: "Crée par <a href='https://www.linkedin.com/in/jigar-sable'>Aiboud Kamilia</a>"
+            credit: "Crée par <a href='https://www.linkedin.com/in/jigar-sable'> Kamilia kami</a>"
         },
         en: {
             title1: "Kamilia's Portfolio",
