@@ -50,7 +50,7 @@ function Education({ lang }) {
         <div className="box-container">
           <div className="box">
             <div className="image">
-              <img draggable="false" src={`./avatar.png`} alt="" />
+              <img draggable="false" src={require('../img/avatar.png')}  alt="" />
             </div>
             <div className="content">
               <h3>{content[lang].degree1}</h3>
@@ -61,7 +61,7 @@ function Education({ lang }) {
 
           <div className="box">
             <div className="image">
-              <img draggable="false" src={`./avatar.png`} alt="" />
+              <img draggable="false" src={require('../img/avatar.png')} alt="" />
             </div>
             <div className="content">
               <h3>{content[lang].degree4}</h3>
@@ -72,7 +72,7 @@ function Education({ lang }) {
 
           <div className="box">
             <div className="image">
-              <img draggable="false" src={`./avatar.png`} alt="" />
+              <img draggable="false" src={require('../img/avatar.png')} alt="" />
             </div>
             <div className="content">
               <h3>{content[lang].degree3}</h3>
@@ -82,7 +82,7 @@ function Education({ lang }) {
           </div>
           <div className="box">
             <div className="image">
-              <img draggable="false" src={`./avatar.png`} alt="" />
+              <img draggable="false" src={require('../img/avatar.png')} alt="" />
             </div>
             <div className="content">
               <h3>{content[lang].degree2}</h3>

@@ -46,7 +46,7 @@ function Work({ lang }) {
 <div className="box-container">
 
    <div className="box tilt">
-        <img draggable="false" src="./avatar.png" alt="" />
+        <img draggable="false" src={require('../img/avatar.png')} alt="" />
  
     <div className="content">
       <div className="tag">
@@ -65,7 +65,7 @@ function Work({ lang }) {
     
   </div>
   <div className="box tilt">
-        <img draggable="false" src="./avatar.png" alt="" />
+        <img draggable="false" src={require('../img/avatar.png')} alt="" />
  
     <div className="content">
       <div className="tag">
@@ -83,7 +83,7 @@ function Work({ lang }) {
     
   </div>
   <div className="box tilt">
-        <img draggable="false" src="./avatar.png" alt="" />
+        <img draggable="false" src={require('../img/avatar.png')} alt="" />
  
     <div className="content">
       <div className="tag">
@@ -101,7 +101,7 @@ function Work({ lang }) {
     
   </div>
   <div className="box tilt">
-        <img draggable="false" src="./avatar.png" alt="" />
+        <img draggable="false" src={require('../img/avatar.png')} alt="" />
  
     <div className="content">
       <div className="tag">
@@ -119,7 +119,7 @@ function Work({ lang }) {
     
   </div>
   <div className="box tilt">
-        <img draggable="false" src="./avatar.png" alt="" />
+        <img draggable="false" src={require('../img/avatar.png')} alt="" />
  
     <div className="content">
       <div className="tag">

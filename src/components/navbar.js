@@ -30,13 +30,13 @@ function Navbar({ lang, onToggleLang }) {
             sections.forEach((section) => observer.unobserve(section));
         };
     }, []);
-
+ 
     return (
         <div className="Nav">
             <HashLink exact="true" to="/#home">
-                <img src={`avatar.png`} alt="logo" className="Logo" />
+                <img src={require("../img/avatar.png")} alt="logo" className="Logo" />
             </HashLink>
-           
+                        
             <ul className="NavItem">
                 <HashLink smooth to="/#home">
                     <button className={activeItem === 'home' ? 'homen' : 'vvd'} onClick={() => setActiveItem('home')}>

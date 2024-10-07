@@ -6,36 +6,48 @@ import { faUser, faDownload } from '@fortawesome/free-solid-svg-icons';
 
 
 function About({lang}) {
-  const content = {
-    fr: {
-      title: 'Développeuse Full Stack',
-      name: 'Je suis Kamilia',
-      me: 'Moi',
-      about: 'À propos de',
-      text: 'Je suis une développeuse Full-Stack basée à Tizi-Ouzou, en Algérie, âgée de 25 ans. Mon enthousiasme se nourrit de l\'amélioration constante de mes compétences en codage et en développement d\'applications desktop, ainsi que de sites Web. Je me spécialise dans la création de WebApps et de sites Web en utilisant ReactJS. Actuellement, je suis ingénieure en système d\'information au sein d\'une entreprise.',
-      details: {
-        age: 'Âge : 25 ans',
-        phone: 'Téléphone : +213 06XXXXXXXX',
-        email: 'Email : XXXXXXXXXX@gmail.com',
-        place: 'Lieu : Tizi-Ouzou, Algérie'
-      },
-      cv: 'Télécharger le CV'
+  
+const calculateAge = (birthYear) => {
+  const currentYear = new Date().getFullYear();
+  return currentYear - birthYear;
+};
+
+
+const birthYear = 1999;
+
+const age = calculateAge(birthYear);
+
+const content = {
+  fr: {
+    title: 'Développeuse Full Stack',
+    name: 'Je suis Kamilia',
+    me: 'Moi',
+    about: 'À propos de',
+    text: `Je suis une développeuse Full-Stack basée à Tizi-Ouzou, en Algérie, âgée de ${age} ans. Mon enthousiasme se nourrit de l'amélioration constante de mes compétences en codage et en développement d'applications desktop, ainsi que de sites Web. Je me spécialise dans la création de WebApps et de sites Web en utilisant ReactJS. Actuellement, je suis ingénieure en système d'information au sein d'une entreprise.`,
+    details: {
+      age: `Âge : ${age} ans`,
+      phone: 'Téléphone : +213 06XXXXXXXX',
+      email: 'Email : XXXXXXXXXX@gmail.com',
+      place: 'Lieu : Tizi-Ouzou, Algérie',
     },
-    en: {
-      title: 'Full Stack Developer',
-      name: 'I\'m Kamilia',
-      me: 'Me',
-      about: 'About',
-      text: 'I am a 25 year old Full-Stack Developer based in Tizi-Ouzou, Algeria. My enthusiasm is fueled by the constant improvement of my skills in coding and developing desktop applications, as well as websites. I specialize in creating WebApps and websites using ReactJS. Currently, I am an information systems engineer within a company.',
-      details: {
-        age: 'Age : 25 years old',
-        phone: 'Phone : +213 06XXXXXXXX',
-        email: 'Email : XXXXXXXXXX@gmail.com',
-        place: 'Place : Tizi-Ouzou, Algeria'
-      },
-      cv: 'Download CV'
+    cv: 'Télécharger le CV',
+  },
+  en: {
+    title: 'Full Stack Developer',
+    name: "I'm Kamilia",
+    me: 'Me',
+    about: 'About',
+    text: `I am a ${age} year old Full-Stack Developer based in Tizi-Ouzou, Algeria. My enthusiasm is fueled by the constant improvement of my skills in coding and developing desktop applications, as well as websites. I specialize in creating WebApps and websites using ReactJS. Currently, I am an information systems engineer within a company.`,
+    details: {
+      age: `Age: ${age} years old`,
+      phone: 'Phone: +213 06XXXXXXXX',
+      email: 'Email: XXXXXXXXXX@gmail.com',
+      place: 'Place: Tizi-Ouzou, Algeria',
     },
-  };
+    cv: 'Download CV',
+  },
+};
+
   
     return (
       <div className="about">
@@ -44,7 +56,7 @@ function About({lang}) {
             
             <div className="row">
               <div className="image">
-                  <img draggable="false" src="./avatar.png" alt=""/>
+                  <img draggable="false" src={require('../img/avatar.png')} alt=""/>
               </div>
               <div className="content">
                   <h3>{content[lang].name}</h3>

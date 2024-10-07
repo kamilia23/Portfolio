@@ -7,6 +7,7 @@ import { faCircleArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { HashLink } from 'react-router-hash-link';
 
 
+
 function Home({lang}) {
   const [textIndex, setTextIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState('');
@@ -73,7 +74,7 @@ function Home({lang}) {
           </div>
         </div>
         <div className="image">
-              <img draggable="false" className="tilt" src="./avatar.png" alt=""/>
+              <img draggable="false" className="tilt" src={require("../img/avatar.png")} alt=""/>
         </div>
       </section>
     </div>

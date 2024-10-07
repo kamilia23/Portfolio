@@ -90,7 +90,7 @@ function Contact({lang}) {
         <div className="container">
           <div className="content">
             <div className="image-box">
-              <img draggable="false" src="./avatar.png" alt="" />
+              <img draggable="false" src={require('../img/avatar.png')} alt="" />
             </div>
             <form ref={form} id="contact-form" onSubmit={handleSubmit}>
               <div className="form-group">
