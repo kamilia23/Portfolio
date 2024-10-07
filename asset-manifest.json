@@ -1,16 +1,30 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.dbcec390.css",
-    "main.js": "/Portfolio/static/js/main.2d4cc794.js",
+    "main.js": "/Portfolio/static/js/main.e8876fca.js",
     "static/js/453.1407b060.chunk.js": "/Portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/tex.png": "/Portfolio/static/media/tex.82812bb9c4a8f4a81904.png",
+    "static/media/Php.png": "/Portfolio/static/media/Php.0cf64bcb3e3cf8cc5388.png",
+    "static/media/xml.png": "/Portfolio/static/media/xml.3a08ec288ac66d562306.png",
+    "static/media/hc.png": "/Portfolio/static/media/hc.7971b8658c522c95996e.png",
+    "static/media/avatar.png": "/Portfolio/static/media/avatar.4f00f5f177947ddd4185.png",
+    "static/media/android.png": "/Portfolio/static/media/android.5b084c54395e3eba0738.png",
+    "static/media/node.png": "/Portfolio/static/media/node.9fea1c7da2bd42ab93bf.png",
+    "static/media/prisma.png": "/Portfolio/static/media/prisma.bdf73b8700340d6d65fa.png",
     "static/media/fond.jpg": "/Portfolio/static/media/fond.425bbbeb394050af7e43.jpg",
+    "static/media/Micros.png": "/Portfolio/static/media/Micros.87cc21105f6b923eed2e.png",
+    "static/media/web.png": "/Portfolio/static/media/web.b6ce4f3e73d08a4f47d6.png",
+    "static/media/sql.png": "/Portfolio/static/media/sql.a04abbf76b39676bc4d9.png",
+    "static/media/react.png": "/Portfolio/static/media/react.2a0cac33f155e4a27216.png",
+    "static/media/soc.png": "/Portfolio/static/media/soc.ccb3eefc31c63d3c8531.png",
+    "static/media/py.png": "/Portfolio/static/media/py.7a9da81b5ea6a4550127.png",
     "index.html": "/Portfolio/index.html",
     "main.dbcec390.css.map": "/Portfolio/static/css/main.dbcec390.css.map",
-    "main.2d4cc794.js.map": "/Portfolio/static/js/main.2d4cc794.js.map",
+    "main.e8876fca.js.map": "/Portfolio/static/js/main.e8876fca.js.map",
     "453.1407b060.chunk.js.map": "/Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dbcec390.css",
-    "static/js/main.2d4cc794.js"
+    "static/js/main.e8876fca.js"
   ]
 }
